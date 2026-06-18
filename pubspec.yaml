@@ -1,0 +1,27 @@
+name: vibrate_timer
+description: "A timer that vibrates the phone hard at a chosen repeating interval, even when the app is in the background or closed."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Schedules exact, repeating alarms that fire even if the app is killed.
+  android_alarm_manager_plus: ^4.0.4
+  # Strong vibration with amplitude control.
+  vibration: ^2.0.0
+  # Persists the running state / chosen interval across app restarts.
+  shared_preferences: ^2.2.3
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
