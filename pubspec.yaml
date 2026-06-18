@@ -13,7 +13,8 @@ dependencies:
   # Schedules exact, repeating alarms that fire even if the app is killed.
   android_alarm_manager_plus: ^4.0.4
   # Strong vibration with amplitude control.
-  vibration: ^2.0.0
+  # 3.x compiles against a modern Android SDK (>=34), required by AGP 9 / API 36.
+  vibration: ^3.1.0
   # Persists the running state / chosen interval across app restarts.
   shared_preferences: ^2.2.3
   cupertino_icons: ^1.0.6
